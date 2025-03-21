@@ -1,0 +1,327 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo blanco claro */
+    color: #333; /* Texto en color gris oscuro */
+}
+
+header {
+    background-color: #8B0000; /* Rojo vino */
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #000; /* Fondo negro */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8B0000; /* Rojo vino al pasar el mouse */
+}
+
+/* Sección principal */
+.hero {
+    background: url('imagenes/LOGO\ 2PACSTORE.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    padding: 0.75rem 1.5rem;
+    background-color: #8B0000; /* Rojo vino */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.hero a:hover {
+    background-color: #B22222; /* Rojo más claro al pasar el mouse */
+}
+
+/* Sección de productos */
+.products {
+    padding: 2rem;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #8B0000; /* Rojo vino */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #8B0000; /* Rojo vino */
+}
+
+.product a {
+    display: block;
+    padding: 0.5rem;
+    background-color: #8B0000; /* Rojo vino */
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+    text-align: center;
+}
+
+.product a:hover {
+    background-color: #B22222; /* Rojo más claro al pasar el mouse */
+}
+
+/* Sección de información */
+.producto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+}
+
+.producto h2 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.producto a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.producto a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste de la imagen en la página de detalles */
+.detalle-img {
+    width: 50%;  /* La imagen ocupará solo la mitad del contenedor */
+    max-width: 250px; /* No será más grande de 250px */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centrar la imagen */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos generales para el carrito */
+.carrito {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carrito h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los productos en el carrito */
+#carrito-contenido {
+    margin-bottom: 30px;
+}
+
+/* Estilo para cada producto dentro del carrito */
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-producto img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.carrito-producto .info {
+    flex: 1;
+}
+
+.carrito-producto .info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.carrito-producto .info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.carrito-producto .info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.carrito-producto .cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.carrito-producto .cantidad input {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.carrito-producto .cantidad button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-producto .cantidad button:hover {
+    background-color: #e0b100;
+}
+
+/* Estilo para el total y botones */
+#total-carrito {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#total-precio {
+    color: #ff6600;
+}
+
+.btn-vaciar, .btn-compra {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-vaciar:hover, .btn-compra:hover {
+    background-color: #e05a00;
+}
+
+
+/* Footer */
+footer {
+    background-color: #8B0000; /* Rojo vino */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
